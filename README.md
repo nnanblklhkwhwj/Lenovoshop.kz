@@ -1,0 +1,2 @@
+# Lenovoshop.kz
+Lenovo
