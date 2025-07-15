@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    /* height: 200vh; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+header {
+    border-bottom: 1px solid grey;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+.logo {
+    width: 90px;
+    height: 60px;
+}
+
+.nav {
+    /* background-color: red; */
+    display: flex;
+    gap: 20px;
+}
+
+li {
+    cursor: pointer;
+    list-style: none;
+    color: white;
+}
+
+li:hover {
+    color: red;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    margin-top: 100px;
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+}
+
+.product {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    gap:  30px 20px;
+}
+
+.card {
+    position: relative;
+    width: 280px;
+    background-color: rgb(255, 255, 255);
+    background-image: linear-gradient(to top,rgb(215, 215, 236),black,rgb(150, 150, 243));
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    align-items: center;
+    row-gap: 10px;
+    filter: drop-shadow(0 3px 3px rgba(0, 0, 0, 0.488));
+}
+
+.imgcard {
+    width: 250px;
+}
+
+.title {
+    color: white;
+    font-style: italic;
+    letter-spacing: 1px;
+}
+
+.saleprice {
+    position: absolute;
+    right: 0;
+    top: -15px;
+    background-color: gold;
+    color: red;
+    padding: 3px 10px;
+    border-top-left-radius:20px ;
+    border-bottom-right-radius: 20px;
+    font-weight: 600;
+    border: 2px solid rgb(199, 122, 122);
+}
+
+.price {
+    color: rgba(0, 0, 0, 0.686);
+    font-weight: 600;
+    text-decoration: line-through;
+}
+
+#btnpay {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    padding: 2px 6px;
+    background-color: rgb(103, 103, 103);
+    border: none;
+    cursor: pointer;
+    border-radius: 3px;
+    color: white;
+}
+
+
+
+#btnpay:hover {
+    transition: all .3s;
+    background-color: black;
+}
+
+footer {
+    margin-top: 40px;
+    background-color: black;
+    width: 100%;
+    display: flex;
+    height: 160px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+}
+
+.footernav li {
+    color: rgb(154, 127, 127);
+}
+
+.addres li {
+    color: rgb(185, 157, 157);
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: red;
+}
+
+@media (max-width: 425px) {
+    header {
+        flex-direction: column;
+        height: auto;
+        gap: 10px;
+    }
+    main {
+        margin-top: 180px;
+
+    }
+}
